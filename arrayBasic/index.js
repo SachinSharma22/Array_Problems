@@ -13,3 +13,8 @@ console.log(fruits);
 console.log(Object.keys(fruits));
 console.log(fruits.length);
 console.log(fruits[8]);
+
+// Decreasing the length
+fruits.length = 2;
+console.log(Object.keys(fruits));
+console.log(fruits.length);
