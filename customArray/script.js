@@ -17,11 +17,22 @@ class MyArray{
         return this.data[index];
     }
 
-    pop(index){
+    pop(){
         const lastItem = this.data[this.length-1];
        delete this.data[this.length-1];
        this.length--;
        return lastItem;
+    }
+
+    shift(){
+        const firstItem = this.data[0];
+        for(let i = 0; i < this.length; i++){
+            this.data[i] = this.data[i+1];
+        }
+
+        delete this.data[this.length-1];
+        this.length--;
+        return firstItem;
     }
 }
 
@@ -29,9 +40,13 @@ const myNewArray = new MyArray();
 myNewArray.push("apple");
 myNewArray.push("Banana");
 myNewArray.push("Mango");
-myNewArray.pop();
+myNewArray.push("orange");
+
+// myNewArray.pop();
 
 // console.log(myNewArray.get(2));
+
+console.log(myNewArray.shift())
 console.log(myNewArray)
 
 
