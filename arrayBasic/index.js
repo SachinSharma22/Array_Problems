@@ -37,3 +37,21 @@ for (const key of iterator){
 console.log(colors);
 const newColors = colors.toReversed();
 console.log(newColors);
+
+// multidimensional array
+
+const random = ["tree", 333, [0,1,2]];
+console.log(random[2][2]);
+
+// Finding the index of item in an array
+
+const birds = ["Parrot", "Falcon", "Owl"];
+console.log(birds.indexOf("Owl"));
+console.log(birds.indexOf("Rabbit"));
+
+// Adding items into array
+const cities = ["Manchester", "Liverpool"];
+cities.push("Cardiff");
+console.log(cities);
+cities.push("Bradford","Brighton");
+console.log(cities);
