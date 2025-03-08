@@ -55,3 +55,8 @@ cities.push("Cardiff");
 console.log(cities);
 cities.push("Bradford","Brighton");
 console.log(cities);
+
+//Store the length of the array into a variable
+const newLength = cities.push("Bristol");
+console.log(cities);
+console.log(newLength);
