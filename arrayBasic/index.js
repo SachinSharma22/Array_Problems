@@ -27,3 +27,13 @@ colors.forEach((item, index) =>{
 });
 
 console.log(colors.reverse());
+
+// Newer methods keys
+const iterator = colors.keys();
+for (const key of iterator){
+    console.log(`${key}: ${colors[key]}`);
+}
+
+console.log(colors);
+const newColors = colors.toReversed();
+console.log(newColors);
